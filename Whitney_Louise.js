@@ -11,9 +11,11 @@
  var turnedFairy = true;
  var badFairies = 6;
  var goodFairies = 1;
+ var fairiesLeft = 5
  var success = true;
  var fail   = true;
  var safeFairies = true;
+ var lostFairies = "We cannot loose anymore fairies!"
  
  // Procedure
 
@@ -58,7 +60,6 @@ var numberTurned = function() {
                 console.log("There are" + " " + badFairies + " " + "bad fairies and counting...");
 	}
 	return("We are losing" + " " + goodFairies + " " + " fairy everyday!");
-
 };
 console.log(numberTurned());
 
@@ -108,11 +109,12 @@ console.log(goodFairyNumber());
 //Array Function
 
 var goodBad = function() {
-	for (var x = 0; x < sectionList.length; x++) {
-		console.log("The section to replenish is" + " " + sectionList[x]);
+	for (var x = 0; x < fairiesLeft.length; x--) {
+		console.log("There are only" + " " + fairiesLeft[x]);
 	}
-	return(workEnd);
+	return(lostFairies);
 };
+console.log(goodBad());
 
 //JSON
 
