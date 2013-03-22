@@ -63,6 +63,18 @@ var numberTurned = function() {
 };
 console.log(numberTurned());
 
+
+var add = function(first, second) {
+    
+    var output = first+second;
+
+    
+    return output;
+};
+
+var myOutput = add(6,100);
+console.log("There are " + "" + myOutput + "" + " naughty fairies all together....so far.");
+
 var fairy = {
 
     "name":       "Sasha",
