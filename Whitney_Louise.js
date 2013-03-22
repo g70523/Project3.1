@@ -23,7 +23,6 @@ var turnFairies = function() {
 	if (turnsNaughty === true) {
 		return(bad);
 	} else { return("The good fairies help everyone!!");}
-	return;
 };
 console.log(turnFairies());
 
@@ -35,6 +34,18 @@ var badQueen = function(){
     }else {return("The fairies are avoiding the naughty queen!")}
     return(turnedFairy)
 };
+
+
+var add = function(first, second) {
+    
+    var output = first+second;
+
+    
+    return output;
+};
+
+var myOutput = add(6,100);
+console.log("There are " + "" + myOutput + "" + " naughty fairies all together....so far.");
 
 var badfairy = {
 
@@ -63,17 +74,6 @@ var numberTurned = function() {
 };
 console.log(numberTurned());
 
-
-var add = function(first, second) {
-    
-    var output = first+second;
-
-    
-    return output;
-};
-
-var myOutput = add(6,100);
-console.log("There are " + "" + myOutput + "" + " naughty fairies all together....so far.");
 
 var fairy = {
 
